@@ -85,3 +85,23 @@ solana program deploy ../rust_contract/target/deploy/<filename>.so
     - Copy the program ID given by the deploy command.
 
     - Paste it into the tests inside the anchor_contract tests folder.
+
+5. Run tests for the Anchor contract:
+```bash
+anchor test
+```
+
+## Key Points
+ - Anchor facilitates CPI calls to native Rust programs.
+
+ - PDAs and accounts are automatically set to the program ID in declare_id!.
+
+ - Using a custom local validator is necessary on WSL when default Anchor validators fail to start.
+
+## Notes
+
+ - Ensure the Rust program is deployed before running the Anchor tests.
+
+ - Always confirm the program ID of the deployed Rust contract and update the tests accordingly.
+
+ - The project is designed to help understand Anchor-to-Rust CPI and test both programs independently.
