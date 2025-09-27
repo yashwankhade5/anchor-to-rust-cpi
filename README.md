@@ -82,9 +82,9 @@ solana-test-validator
 solana program deploy ../rust_contract/target/deploy/<filename>.so
 ```
 
- - Copy the program ID given by the deploy command.
-
- - Paste it into the tests inside the anchor_contract tests folder.
+   - Copy the program ID given by the deploy command.
+ 
+   - Paste it into the tests inside the anchor_contract tests folder.
 
 5. Run tests for the Anchor contract:
 ```bash
