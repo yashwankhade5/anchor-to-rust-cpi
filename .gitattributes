@@ -1,7 +1,6 @@
-# Count Rust program code normally
-*.rs linguist-detectable=true
-
-# Ignore Anchor-generated TypeScript tests/migrations in language stats
-/tests/* linguist-vendored
-/migrations/* linguist-vendored
-/app/* linguist-vendored
+# Mark generated files as linguist-vendored so GitHub ignores them
+anchor_contract/target/* linguist-vendored
+anchor_contract/node_modules/* linguist-vendored
+rust_contract/target/* linguist-vendored
+client/node_modules/* linguist-vendored
+client/.bun/* linguist-vendored
