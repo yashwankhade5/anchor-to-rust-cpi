@@ -82,16 +82,18 @@ solana-test-validator
 solana program deploy ../rust_contract/target/deploy/<filename>.so
 ```
 
-    - Copy the program ID given by the deploy command.
+ - Copy the program ID given by the deploy command.
 
-    - Paste it into the tests inside the anchor_contract tests folder.
+ - Paste it into the tests inside the anchor_contract tests folder.
 
 5. Run tests for the Anchor contract:
 ```bash
 anchor test
+
 ```
 
 ## Key Points
+
  - Anchor facilitates CPI calls to native Rust programs.
 
  - PDAs and accounts are automatically set to the program ID in declare_id!.
