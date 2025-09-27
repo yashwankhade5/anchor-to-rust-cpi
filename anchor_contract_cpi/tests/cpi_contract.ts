@@ -24,9 +24,6 @@ describe("cpi_contract", () => {
     await program.provider.connection.confirmTransaction(tx, "confirmed")
     const accountInfo = await program.provider.connection.getAccountInfo(newAccount.publicKey, "confirmed");
     console.log("Account info:", accountInfo.data.readBigUint64LE(0));
-
-
-
   });
 
   it("double", async () => {
