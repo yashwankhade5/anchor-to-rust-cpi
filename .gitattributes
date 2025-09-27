@@ -1,0 +1,7 @@
+# Count Rust program code normally
+*.rs linguist-detectable=true
+
+# Ignore Anchor-generated TypeScript tests/migrations in language stats
+/tests/* linguist-vendored
+/migrations/* linguist-vendored
+/app/* linguist-vendored
