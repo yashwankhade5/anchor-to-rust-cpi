@@ -78,7 +78,7 @@ solana-test-validator
 ```
 
 4. Deploy the Rust contract to the blockchain: 
-(replace <filename>.so with the actual file name generated in rust_contract/target/deploy/)
+(replace `<filename>`.so with the actual file name generated in rust_contract/target/deploy/)
 ```bash
 solana program deploy ../rust_contract/target/deploy/<filename>.so
 ```
